@@ -1,0 +1,32 @@
+//- will append the layout pug file
+extends layout
+
+//- targets the block with name 'content' to place following code
+//- will replace the default content under the block on the layout pug file
+//- if not included, the default will show
+block content
+	p hello
+	p #{timeStamp}
+
+
+block footer
+	p I love you
+
+
+
+
+
+//- //- div.wrapper.ohonoooo
+//- //- If you leave the element type out it will assume it's a div
+//- .wrapper
+//- 	p.hello hello!
+//- 	span#yo yo!
+//- 	br
+//- 	//- Kind of hard to remember to use backticks for attributes
+//- 	img.dog(src="dog.jpg" alt=`Dog ${dog}`)
+
+//- //- If you need to make a variable, use a minus sign and then JS
+//- - const upDog = dog.toUpperCase();
+
+//- //- interpolate a variable inside of text, use the variable name and it will include the value
+//- p.hello Hello my dog's name is #{upDog}
